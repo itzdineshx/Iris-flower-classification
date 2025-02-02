@@ -31,7 +31,11 @@ This project demonstrates the classification of the **Iris Flower dataset** usin
 ```
 Iris-Flower-Classification/
 ├── data/
-│   └── iris.csv (if you choose to include a CSV of the dataset)
+│   └── iris.csv (Optional - Include the dataset if required)
+├── models/
+│   ├── knn_model.pkl (Trained KNN model)
+│   ├── svm_model.pkl (Trained SVM model)
+│   └── logreg_model.pkl (Trained Logistic Regression model)
 ├── notebooks/
 │   └── iris_classification.ipynb (Main Jupyter notebook with code and analysis)
 ├── requirements.txt (List of Python dependencies)
@@ -70,6 +74,27 @@ pip install scikit-learn pandas numpy matplotlib seaborn
 2. Follow the steps in the notebook to load the dataset, perform data preprocessing, and train the models.
 3. Evaluate the models using various classification metrics such as **accuracy**, **precision**, **recall**, and **F1-score**.
 4. View the performance comparison between **KNN**, **SVM**, and **Logistic Regression**.
+
+### **Loading the Pretrained Models**
+You can also load the trained models directly from the `models/` folder, using the following code:
+
+```python
+import pickle
+
+# Load KNN model
+with open('models/knn_model.pkl', 'rb') as file:
+    knn_model = pickle.load(file)
+
+# Load SVM model
+with open('models/svm_model.pkl', 'rb') as file:
+    svm_model = pickle.load(file)
+
+# Load Logistic Regression model
+with open('models/logreg_model.pkl', 'rb') as file:
+    logreg_model = pickle.load(file)
+```
+
+You can then use these models to make predictions on new data, without the need to retrain them.
 
 ## **Results**
 The models were evaluated on the Iris dataset with the following classification reports:
@@ -121,9 +146,8 @@ weighted avg       1.00      1.00      1.00        30
 - **Advanced Models:** Exploring more complex models like **Random Forests** or **Gradient Boosting**.
 
 ## **Author**
-DINESH S
-[Your LinkedIn Profile]([your-linkedin-link](https://www.linkedin.com/in/dinesh-x/)) | [GitHub Profile]([your-github-link](https://github.com/itzdineshx/)
+DINESH S  
+[LinkedIn Profile]([your-linkedin-link](https://www.linkedin.com/in/dinesh-x/)) | [GitHub Profile]([your-github-link](https://github.com/itzdineshx/)
 
 ## **License**
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
