@@ -147,7 +147,7 @@ weighted avg       1.00      1.00      1.00        30
 
 ## **Author**
 DINESH S  
-[LinkedIn Profile]([your-linkedin-link](https://www.linkedin.com/in/dinesh-x/)) | [GitHub Profile]([your-github-link](https://github.com/itzdineshx/)
+[LinkedIn Profile]([your-linkedin-link](https://www.linkedin.com/in/dinesh-x/) | [GitHub Profile]([your-github-link](https://github.com/itzdineshx/)
 
 ## **License**
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
