@@ -1,5 +1,7 @@
 # Iris Flower Classification: A Comparison of KNN, SVM, and Logistic Regression
 
+![iris flowers](cover.png)
+
 ## **Overview**
 This project demonstrates the classification of the **Iris Flower dataset** using three different machine learning algorithms: **K-Nearest Neighbors (KNN)**, **Support Vector Machine (SVM)**, and **Logistic Regression**. The dataset contains measurements of four features (sepal length, sepal width, petal length, petal width) for three species of Iris flowers: **Setosa**, **Versicolor**, and **Virginica**. The goal of this project is to explore and compare the performance of these models on a classification task.
 
