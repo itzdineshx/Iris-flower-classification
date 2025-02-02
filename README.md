@@ -140,10 +140,8 @@ weighted avg       1.00      1.00      1.00        30
 - **SVM** showed excellent performance with an accuracy of 97%, though its recall for the "Versicolor" class was slightly lower.
 - All models performed well on the small and simple Iris dataset, but **KNN** and **Logistic Regression** were slightly better in this case.
 
-## **Future Work**
-- **Hyperparameter Tuning:** Further tuning of model parameters, such as the number of neighbors for KNN or the kernel type for SVM, could improve model performance.
-- **Cross-validation:** Implementing **cross-validation** for more reliable model evaluation.
-- **Advanced Models:** Exploring more complex models like **Random Forests** or **Gradient Boosting**.
+## **Result**
+![Result](result.png)
 
 ## **Author**
 DINESH S  
