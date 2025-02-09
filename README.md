@@ -2,6 +2,8 @@
 
 ![iris flowers](img/cover.png)
 
+## **Try App:** [Link]()
+
 ## **Overview**
 This project demonstrates the classification of the **Iris Flower dataset** using three different machine learning algorithms: **K-Nearest Neighbors (KNN)**, **Support Vector Machine (SVM)**, and **Logistic Regression**. The dataset contains measurements of four features (sepal length, sepal width, petal length, petal width) for three species of Iris flowers: **Setosa**, **Versicolor**, and **Virginica**. The goal of this project is to explore and compare the performance of these models on a classification task.
 
@@ -144,6 +146,64 @@ weighted avg       1.00      1.00      1.00        30
 
 ## **Result**
 ![Result](img/result.png)
+
+Below is an example of a new section you can add to your README for demonstrating the interactive app, its usage, and how predictions are made:
+
+---
+
+## **App Demo: Interactive Use and Predictions**
+
+This section details how to interact with the demo application built for Iris flower prediction.
+
+![App Demo](img/flower_demo1.png)
+
+## **Try App:** [Link]()
+
+### **Demo Overview**
+The interactive demo allows you to:
+- Input numerical measurements for the iris flower features (sepal length, sepal width, petal length, petal width).
+- Select the machine learning model (KNN, SVM, or Logistic Regression) via a dropdown.
+- See the prediction result along with a representative flower image displayed from the `flower_img` folder.
+
+### **How to Run the Demo**
+1. **Install Dependencies:**  
+   Ensure that all required libraries are installed by running:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Launch the App:**  
+   From the project root or the `src` folder, launch the Gradio demo by executing:
+   ```bash
+   python app.py
+   ```
+   This command will start the Gradio interface and open a new tab in your default browser.
+
+3. **Using the Demo Interface:**
+   - **Input Values:** Enter values for the four features:
+     - **Sepal Length (cm)**
+     - **Sepal Width (cm)**
+     - **Petal Length (cm)**
+     - **Petal Width (cm)**
+   - **Select a Model:** Use the dropdown to choose one of the available models:
+     - **K-Nearest Neighbors (KNN)**
+     - **Support Vector Machine (SVM)**
+     - **Logistic Regression**
+   - **Get Prediction:** Click the **"Predict"** button.
+   
+   After clicking **"Predict"**, the app will display:
+   - A **text output** indicating the predicted Iris species.
+   - An **image** of the corresponding iris flower loaded from the `flower_img` folder.
+
+4. **Experiment and Explore:**  
+   You can modify the inputs and select different models to see how each algorithm predicts the flower species. This interactive demo makes it easy to observe the decision behavior of each model.
+
+> **Note:**  
+> Ensure that the flower images (`setosa.jpg`, `versicolor.jpg`, and `virginica.jpg`) are correctly placed inside the `flower_img` folder so that the corresponding image appears upon prediction.
+
+Enjoy exploring the Iris Flower Classification demo and see how different models perform on various inputs!
+
+---
 
 ## **Author**
 DINESH S  
