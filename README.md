@@ -80,7 +80,7 @@ pip install -r requirements.txt
 To install these libraries, run:
 
 ```bash
-pip install scikit-learn pandas numpy matplotlib seaborn
+pip install scikit-learn pandas numpy matplotlib seaborn joblib gradio
 ```
 
 ## **Usage**
@@ -93,19 +93,13 @@ pip install scikit-learn pandas numpy matplotlib seaborn
 You can also load the trained models directly from the `models/` folder, using the following code:
 
 ```python
-import pickle
+import joblib
 
-# Load KNN model
-with open('models/knn_model.pkl', 'rb') as file:
-    knn_model = pickle.load(file)
-
-# Load SVM model
-with open('models/svm_model.pkl', 'rb') as file:
-    svm_model = pickle.load(file)
-
-# Load Logistic Regression model
-with open('models/logreg_model.pkl', 'rb') as file:
-    logreg_model = pickle.load(file)
+# Save the models and scaler
+joblib.dump(knn, 'iris_knn_model.pkl')
+joblib.dump(svm, 'iris_svm_model.pkl')
+joblib.dump(logreg, 'iris_logreg_model.pkl')
+joblib.dump(scaler, 'scaler.pkl')
 ```
 
 You can then use these models to make predictions on new data, without the need to retrain them.
