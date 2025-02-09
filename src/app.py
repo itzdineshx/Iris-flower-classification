@@ -2,6 +2,8 @@ import numpy as np
 import gradio as gr
 import joblib
 import os
+from PIL import Image
+import matplotlib.pyplot as plt
 
 # Load pre-trained models using joblib
 knn_model = joblib.load('/workspaces/Iris-flower-classification/models/iris_knn_model.pkl')
@@ -13,10 +15,10 @@ model_dict = {
     "Logistic Regression": logreg_model,
     "K-Nearest Neighbors (KNN)": knn_model,
     "Support Vector Machine (SVM)": svm_model
-    
 }
 
 # Mapping of prediction values to iris species and the corresponding image file path.
+# Adjust the paths based on your actual folder structure.
 iris_classes = {
     0: ("Setosa", "/workspaces/Iris-flower-classification/img/flower_img/Iris_setosa.jpg"),
     1: ("Versicolor", "/workspaces/Iris-flower-classification/img/flower_img/Iris_versicolor.jpg"),
@@ -37,16 +39,24 @@ def predict_iris(sepal_length, sepal_width, petal_length, petal_width, selected_
     species_name, image_path, *_ = species_info
     print("Mapped species info:", species_name, image_path)
     
-    # Verify that the image exists
+    # Check if the image file exists locally
     if not os.path.exists(image_path):
         print("Image file not found at:", image_path)
-        image_path = None
+        fig = None
     else:
         print("Image found:", image_path)
-        
+        # Load the image using PIL
+        img = Image.open(image_path)
+        # Create a matplotlib figure to plot the image
+        fig, ax = plt.subplots(figsize=(5, 5))
+        ax.imshow(img)
+        ax.axis('off')
+        ax.set_title(f"{species_name}", fontsize=16)
+        plt.tight_layout()
+    
     prediction_text = f"Predicted Iris Species: {species_name}"
     print("Returning output:", prediction_text, image_path)
-    return prediction_text, image_path
+    return prediction_text, fig
 
 # Define the Gradio input components
 inputs = [
@@ -57,10 +67,10 @@ inputs = [
     gr.Dropdown(choices=list(model_dict.keys()), label="Select Model", value="K-Nearest Neighbors (KNN)")
 ]
 
-# Define the Gradio output components: one for text, one for the image.
+# Define the Gradio output components: one for text, one for the matplotlib plot.
 outputs = [
     gr.Textbox(label="Prediction Output"),
-    gr.Image(label="Flower Image", type="filepath")
+    gr.Plot(label="Flower Plot")
 ]
 
 # Footer HTML for LinkedIn and GitHub profiles
@@ -77,6 +87,7 @@ footer_html = """
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width:32px;">
     </a>
   </div>
+  <script>console.log("Footer HTML loaded successfully.");</script>
 </footer>
 """
 
@@ -90,8 +101,7 @@ interface = gr.Interface(
         "The app will display the predicted species along with a representative image."
     ),
     article=(
-        "Adjust the inputs to see the predicted iris species and a related image."
-        + footer_html
+        "Adjust the inputs to see the predicted iris species and a related image." + footer_html
     )
 )
 
