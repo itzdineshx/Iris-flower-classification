@@ -33,17 +33,27 @@ This project demonstrates the classification of the **Iris Flower dataset** usin
 
 ## **Project Structure**
 ```
-Iris-Flower-Classification/
-├── data/
-│   └── iris.csv (Optional - Include the dataset if required)
-├── models/
-│   ├── knn_model.pkl (Trained KNN model)
-│   ├── svm_model.pkl (Trained SVM model)
-│   └── logreg_model.pkl (Trained Logistic Regression model)
-├── src/
-│   └── iris_classification.ipynb (Main Jupyter notebook with code and analysis)
-├── requirements.txt (List of Python dependencies)
-└── README.md (This file)
+Directory structure:
+└── itzdineshx-iris-flower-classification/
+    ├── README.md
+    ├── LICENSE
+    ├── requirements.txt
+    ├── Data/
+    │   ├── Iris.csv
+    │   └── database.sqlite
+    ├── img/
+    │   └── flower_img/
+    ├── models/
+    │   ├── iris_knn_model.pkl
+    │   ├── iris_logreg_model.pkl
+    │   └── iris_svm_model.pkl
+    ├── notebook/
+    │   └── IRIS_FLOWERS_CLASSIFICATION.ipynb
+    └── src/
+        ├── app.py
+        └── .gradio/
+            └── certificate.pem
+
 ```
 
 ## **Installation**
