@@ -159,7 +159,7 @@ Below is an example of a new section you can add to your README for demonstratin
 
 This section details how to interact with the demo application built for Iris flower prediction.
 
-![App Demo](img/flower_demo1.png)
+![App Interface](img/flower_app_interface.png)
 
 ## **Try App:** [Link]()
 
@@ -205,10 +205,7 @@ The interactive demo allows you to:
 > **Note:**  
 > Ensure that the flower images (`setosa.jpg`, `versicolor.jpg`, and `virginica.jpg`) are correctly placed inside the `flower_img` folder so that the corresponding image appears upon prediction.
 
-Enjoy exploring the Iris Flower Classification demo and see how different models perform on various inputs!
-
----
-Here's a sample "Contributing" section for your README file to invite contributions to your Iris Flower Classification web app project:
+![App Demo](img/flower_demo1.png)
 
 ---
 
