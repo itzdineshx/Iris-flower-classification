@@ -2,7 +2,7 @@
 
 ![iris flowers](img/cover.png)
 
-## **Try App:** [Link]()
+## **Try App:** [Link](https://huggingface.co/spaces/DINESH-X/Iris-Flower-classifier)
 
 ## **Overview**
 This project demonstrates the classification of the **Iris Flower dataset** using three different machine learning algorithms: **K-Nearest Neighbors (KNN)**, **Support Vector Machine (SVM)**, and **Logistic Regression**. The dataset contains measurements of four features (sepal length, sepal width, petal length, petal width) for three species of Iris flowers: **Setosa**, **Versicolor**, and **Virginica**. The goal of this project is to explore and compare the performance of these models on a classification task.
@@ -161,7 +161,7 @@ This section details how to interact with the demo application built for Iris fl
 
 ![App Interface](img/flower_app_interface.png)
 
-## **Try App:** [Link]()
+## **Try App:** [Link](https://huggingface.co/spaces/DINESH-X/Iris-Flower-classifier)
 
 ### **Demo Overview**
 The interactive demo allows you to:
