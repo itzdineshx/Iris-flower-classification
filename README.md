@@ -67,32 +67,37 @@ Each model predicts the species of an iris flower based on four measurements (se
 
 ## **Project Structure**
 ```
-itzdineshx-iris-flower-classification/
-├── README.md
-├── LICENSE
-├── requirements.txt
-├── Data/
-│   ├── Iris.csv
-│   └── database.sqlite
-├── img/
-│   ├── cover.png
-│   ├── result.png
-│   ├── app_animation.gif         # Animated demo of the app
-│   ├── model_comparison.gif      # Animated visualization for model comparison
-│   └── flower_img/
-│       ├── Iris_setosa.jpg
-│       ├── Iris_versicolor.jpg
-│       └── Iris_virginica.jpg
-├── models/
-│   ├── iris_knn_model.joblib
-│   ├── iris_svm_model.joblib
-│   ├── iris_logreg_model.joblib
-│   ├── iris_dtc_model.joblib
-│   └── iris_rfc_model.joblib
-├── notebook/
-│   └── IRIS_FLOWERS_CLASSIFICATION.ipynb
-└── src/
-    └── app.py
+Directory structure:
+└── itzdineshx-iris-flower-classification/
+    ├── README.md
+    ├── LICENSE
+    ├── requirements.txt
+    ├── Data/
+    │   ├── Iris.csv
+    │   └── database.sqlite
+    ├── img/
+    │   ├── iris_virginica.webp
+    │   └── flower_img/
+    ├── models/
+    │   ├── iris_knn_model.pkl
+    │   ├── iris_logreg_model.pkl
+    │   ├── iris_svm_model.pkl
+    │   └── iris_models_tuned/
+    │       ├── dtc_model.joblib
+    │       ├── knn_model.joblib
+    │       ├── label_encoder.joblib
+    │       ├── logreg_model.joblib
+    │       ├── rfc_model.joblib
+    │       ├── scaler.joblib
+    │       └── svm_model.joblib
+    ├── notebook/
+    │   └── IRIS_FLOWERS_CLASSIFICATION.ipynb
+    └── src/
+        ├── advanced_app.py
+        ├── app.py
+        └── .gradio/
+            └── certificate.pem
+
 ```
 
 ---
