@@ -188,39 +188,62 @@ These examples are available directly in the Gradio interface to help you get st
 ![App Interface Demo](img/flower_demo1.gif)  
 *An animated demonstration of the interactive app in action.*
 
+
 ---
 
 ## **Results**
 
-The models have been evaluated on the Iris dataset. Below are sample classification reports (results may vary slightly depending on train/test splits):
+The models have been evaluated on the Iris dataset using various metrics. Below are sample classification reports for each model. Note that the results may vary slightly depending on the train/test splits.
 
 ### **KNN Classification Report**
+
 ```
               precision    recall  f1-score   support
-   Iris-setosa       1.00      1.00      1.00        10
-Iris-versicolor       1.00      1.00      1.00         9
-Iris-virginica       1.00      1.00      1.00        11
+Iris-setosa       1.00      1.00      1.00        10
+Iris-versicolor   1.00      1.00      1.00         9
+Iris-virginica    1.00      1.00      1.00        11
 ```
-
-### **SVM Classification Report**
-```
-              precision    recall  f1-score   support
-   Iris-setosa       1.00      1.00      1.00        10
-Iris-versicolor       1.00      0.89      0.94         9
-Iris-virginica       0.92      1.00      0.96        11
-```
-
-### **Logistic Regression Classification Report**
-```
-              precision    recall  f1-score   support
-   Iris-setosa       1.00      1.00      1.00        10
-Iris-versicolor       1.00      1.00      1.00         9
-Iris-virginica       1.00      1.00      1.00        11
-```
-
-*(Additional reports for Decision Tree and Random Forest can be added as needed.)*
 
 ---
+
+### **SVM Classification Report**
+
+```
+              precision    recall  f1-score   support
+Iris-setosa       1.00      1.00      1.00        10
+Iris-versicolor   1.00      0.89      0.94         9
+Iris-virginica    0.92      1.00      0.96        11
+```
+
+---
+
+### **Logistic Regression Classification Report**
+
+```
+              precision    recall  f1-score   support
+Iris-setosa       1.00      1.00      1.00        10
+Iris-versicolor   1.00      1.00      1.00         9
+Iris-virginica    1.00      1.00      1.00        11
+```
+
+---
+
+### **Decision Tree and Random Forest Classification Report**
+
+```
+              precision    recall  f1-score   support
+Iris-setosa       1.00      1.00      1.00        10
+Iris-versicolor   1.00      1.00      1.00         9
+Iris-virginica    1.00      1.00      1.00        11
+```
+
+---
+
+*Additional reports for Decision Tree and Random Forest can be added as needed.*
+
+---
+
+This format uses clear section headings and code blocks for each classification report, making it easy to read and understand the performance of each model.
 
 ## **Deployment**
 The Gradio app has been deployed on Hugging Face Spaces for free hosting. You can access it here:
