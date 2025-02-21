@@ -2,6 +2,9 @@
 
 ![iris flowers](img/cover.png)
 
+![App Animation](img/app_animation.gif)  
+*Watch the interactive demo in action!*
+
 ## **Try App:** [Link](https://huggingface.co/spaces/DINESH-X/Iris-Flower-classifier)
 
 ---
@@ -55,6 +58,9 @@ Each model predicts the species of an iris flower based on four measurements (se
 5. **Random Forest:**  
    An ensemble method based on multiple decision trees for robust predictions.
 
+![Model Comparison Animation](img/model_comparison.gif)  
+*An animated comparison of model decision boundaries.*
+
 ---
 
 ## **Project Structure**
@@ -69,6 +75,8 @@ itzdineshx-iris-flower-classification/
 ├── img/
 │   ├── cover.png
 │   ├── result.png
+│   ├── app_animation.gif         # Animated demo of the app
+│   ├── model_comparison.gif      # Animated visualization for model comparison
 │   └── flower_img/
 │       ├── Iris_setosa.jpg
 │       ├── Iris_versicolor.jpg
@@ -173,6 +181,9 @@ examples=[
 ]
 ```
 These examples are available directly in the Gradio interface to help you get started.
+
+![App Interface Demo](img/flower_demo1.gif)  
+*An animated demonstration of the interactive app in action.*
 
 ---
 
