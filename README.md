@@ -66,6 +66,7 @@ Each model predicts the species of an iris flower based on four measurements (se
 ---
 
 ## **Project Structure**
+
 ```
 Directory structure:
 └── itzdineshx-iris-flower-classification/
@@ -91,12 +92,14 @@ Directory structure:
     │       ├── scaler.joblib
     │       └── svm_model.joblib
     ├── notebook/
-    │   └── IRIS_FLOWERS_CLASSIFICATION.ipynb
+    │   ├── IRIS_FLOWERS_CLASSIFICATION.ipynb
+    │   └── IRIS_FLOWERS_CLASSIFICATION_2_0.ipynb
     └── src/
         ├── advanced_app.py
         ├── app.py
         └── .gradio/
             └── certificate.pem
+
 
 ```
 
@@ -141,8 +144,9 @@ pip install scikit-learn pandas numpy matplotlib seaborn joblib gradio pillow
 ## **Usage**
 
 ### **Training and Saving Models**
-The project includes a Jupyter Notebook (`IRIS_FLOWERS_CLASSIFICATION.ipynb`) that demonstrates:
+The project includes a Jupyter Notebook (`IRIS_FLOWERS_CLASSIFICATION.ipynb`) and (`IRIS_FLOWERS_CLASSIFICATION_2.0.ipynb`) that demonstrates:
 - Loading and preprocessing the Iris dataset.
+- Visulization of Data
 - Training the five classifiers.
 - Evaluating the models using various classification metrics.
 - Saving the trained models and scaler using Joblib.
