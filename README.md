@@ -2,9 +2,6 @@
 
 ![App Animation](https://img1.picmix.com/output/stamp/normal/6/2/8/3/2083826_c08f2.gif) 
 
-![iris flowers](img/cover.png)
-
-
 
 *Watch the interactive demo in action!*
 
@@ -13,6 +10,9 @@
 ---
 
 ## **Overview**
+
+![iris flowers](img/cover.png)
+
 This project demonstrates the classification of the **Iris Flower dataset** using five different machine learning algorithms:
 - **K-Nearest Neighbors (KNN)**
 - **Support Vector Machine (SVM)**
