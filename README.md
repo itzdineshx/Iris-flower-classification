@@ -61,7 +61,7 @@ Each model predicts the species of an iris flower based on four measurements (se
 5. **Random Forest:**  
    An ensemble method based on multiple decision trees for robust predictions.
 
-![Model Comparison Animation](img/iris_models_comp_adv.jpg)  
+![Model Comparison Animation](img/iris_models_comp_adv.png)  
 
 ---
 
