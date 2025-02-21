@@ -166,6 +166,9 @@ This will start the Gradio interface, open a new browser tab, and display the in
 
 ## **App Demo: Interactive Predictions with Confidence**
 
+
+![App Interface](img/iris_app_interface.png)  
+
 The interactive demo allows you to:
 - **Input Measurements:** Enter sepal and petal dimensions.
 - **Select a Model:** Choose one of the five available classifiers.
@@ -184,8 +187,7 @@ examples=[
 ```
 These examples are available directly in the Gradio interface to help you get started.
 
-![App Interface Demo](img/flower_demo1.gif)  
-*An animated demonstration of the interactive app in action.*
+![App Usage](img/iris_pred_versicolor.png)  
 
 
 ---
