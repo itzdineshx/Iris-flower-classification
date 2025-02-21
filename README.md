@@ -1,6 +1,6 @@
 # Iris Flower Classification: A Comprehensive Comparison of Multiple Models with Confidence Prediction
 
-![App Animation](https://img1.picmix.com/output/stamp/normal/6/2/8/3/2083826_c08f2.gif) 
+![App Animation](img/iris.gif) 
 
 
 *Watch the interactive demo in action!*
@@ -61,8 +61,7 @@ Each model predicts the species of an iris flower based on four measurements (se
 5. **Random Forest:**  
    An ensemble method based on multiple decision trees for robust predictions.
 
-![Model Comparison Animation](img/model_comparison.gif)  
-*An animated comparison of model decision boundaries.*
+![Model Comparison Animation](img/iris_models_comp_adv.jpg)  
 
 ---
 
@@ -238,12 +237,6 @@ Iris-virginica    1.00      1.00      1.00        11
 ```
 
 ---
-
-*Additional reports for Decision Tree and Random Forest can be added as needed.*
-
----
-
-This format uses clear section headings and code blocks for each classification report, making it easy to read and understand the performance of each model.
 
 ## **Deployment**
 The Gradio app has been deployed on Hugging Face Spaces for free hosting. You can access it here:
