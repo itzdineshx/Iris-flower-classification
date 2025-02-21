@@ -2,7 +2,7 @@
 
 ![iris flowers](img/cover.png)
 
-![App Animation](img/app_animation.gif)  
+![App Animation](https://img1.picmix.com/output/stamp/normal/6/2/8/3/2083826_c08f2.gif) 
 *Watch the interactive demo in action!*
 
 ## **Try App:** [Link](https://huggingface.co/spaces/DINESH-X/Iris-Flower-classifier)
