@@ -289,6 +289,10 @@ Contributions are welcome! If you have suggestions or improvements, please consi
 <a href="https://github.com/itzdineshx/Iris-flower-classification" target="_blank">
   <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width:32px;">
 </a>
+<a href="mailto:personalaccdinesh@gmail.com" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" style="width:32px;">
+</a>
+
 
 ---
 
