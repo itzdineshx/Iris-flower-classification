@@ -260,15 +260,15 @@ Contributions are welcome! If you have suggestions or improvements, please consi
 
 ### **How to Contribute**
 1. Fork the repository.
-2. Clone your fork:
+2. Clone fork:
    ```bash
-   git clone https://github.com/itzdineshx/Iris-Flower-Classification.git
+   git clone https://github.com/itzdineshx/Iris-flower-classification.git
    ```
 3. Create a new branch:
    ```bash
    git checkout -b feature/new-feature
    ```
-4. Commit your changes:
+4. Commit changes:
    ```bash
    git commit -m "Add new feature"
    ```
@@ -282,7 +282,14 @@ Contributions are welcome! If you have suggestions or improvements, please consi
 
 ## **Author**
 **DINESH S**  
-[LinkedIn](https://www.linkedin.com/in/dinesh-x/) | [GitHub](https://github.com/itzdineshx/)
+<h3>Connect with me:</h3>
+<a href="https://www.linkedin.com/in/dinesh-x/" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width:32px;">
+</a>
+<br>
+<a href="https://github.com/itzdineshx/Iris-flower-classification" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width:32px;">
+</a>
 
 ---
 
