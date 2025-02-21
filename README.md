@@ -1,8 +1,11 @@
 # Iris Flower Classification: A Comprehensive Comparison of Multiple Models with Confidence Prediction
 
+![App Animation](https://img1.picmix.com/output/stamp/normal/6/2/8/3/2083826_c08f2.gif) 
+
 ![iris flowers](img/cover.png)
 
-![App Animation](https://img1.picmix.com/output/stamp/normal/6/2/8/3/2083826_c08f2.gif) 
+
+
 *Watch the interactive demo in action!*
 
 ## **Try App:** [Link](https://huggingface.co/spaces/DINESH-X/Iris-Flower-classifier)
